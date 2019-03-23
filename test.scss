@@ -1,0 +1,98 @@
+@import './src/module/stooges-variables.scss';
+@import './src/scss/project-variables.scss';
+@import './src/module/stooges-mixin.scss';
+@import './src/scss/project-mixin.scss';
+@import './src/module/stooges-basscss.scss';
+@import './src/scss/project-basscss.scss';
+@import './src/scss/fontFamily.scss';
+
+.topHeader {
+	background: $color-basic-1;
+	.flex {
+		justify-content: space-between;
+		align-items: center;
+		height: $topHeaderHeight;
+		p {
+		}
+		.topSocialMedia {
+			a {
+				margin-left: 20px;
+				font-size: 12px;
+				&:first-child {
+					margin-left: 0;
+				}
+				i {
+				}
+				span {
+				}
+			}
+		}
+	}
+}
+
+.header {
+	height: 120px;
+
+	.headerChg {
+		width: 100%;
+
+		width: 100%;
+		position: absolute;
+		z-index: 2;
+		background: transparent;
+
+		&.back {
+			background-color: red;
+		}
+
+		&.scroll {
+			border-bottom: 4px solid #37c1f0;
+			position: absolute;
+		}
+		.flex {
+			height: 120px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			.logo {
+				img {
+					height: 100px;
+				}
+			}
+
+			.nav {
+				nav {
+					min-width: 32px;
+					text-transform: capitalize;
+					font-size: 15px;
+					a {
+						font-size: 15px;
+						font-weight: 400;
+						color: $font-color-2;
+						padding: 10px 8px;
+						border: 1px solid transparent;
+						display: inline-block;
+						&:hover {
+							border-color: $navBorder;
+							border-radius: 30px;
+						}
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+			@media #{$breakpoint-down-sm} {
+				justify-content: center;
+				height: 70px;
+				.logo {
+					img {
+						height: 70px;
+					}
+				}
+				.nav {
+					display: none;
+				}
+			}
+		}
+	}
+}

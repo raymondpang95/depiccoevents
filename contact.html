@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Contact</title>
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<div id="headerChg" class="headerChg">
+				<div class="container  flex flex-space-between">
+					<a class="logo">
+						<img src="src/image/logo100.png" />
+					</a>
+					<div class="nav">
+						<nav>
+							<a href="index.html">home</a>
+							<a href="events.html">Events</a>
+							<a href="services.html">Services</a>
+							<a href="products.html">Products</a>
+							<a href="blogs.html">Blogs</a>
+							<a href="faq.html">Faq</a>
+							<a href="about.html">About</a>
+							<a href="contact.html">Contact</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topBackground">
+			<div class="container topBackgroundCenter flex flex-center">
+				<p class="title h3">Contact</p>
+				<div class="link">
+					<a href="">home</a>
+					<span>|</span>
+					<span>Contact </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="container">
+				<div class="row mxn2">
+					<div class="lg-col-7 md-col-7 p2 left">
+						<p class="subTitle">have a question?</p>
+						<p class="title my4 ff2">send message</p>
+						<form class="form" action="">
+							<div class="row mxn1">
+								<div class="sm-col-6 lg-col-6 md-col-6 p1">
+									<input placeholder="name" type="text" />
+								</div>
+								<div class="sm-col-6 lg-col-6 md-col-6 p1">
+									<input placeholder="e-mail" type="text" />
+								</div>
+							</div>
+							<textarea class="mt1" placeholder="message" id="" cols="30" rows="10"></textarea>
+							<button class="button mt1">send message</button>
+						</form>
+					</div>
+					<div class="lg-col-5 md-col-5 p2 right">
+						<p class="subTitle">CONTACT INFO</p>
+						<p class="title my4 ff2">FIND US</p>
+						<address>
+							<p class="addressTitle">Phone</p>
+							<a href="">012-628 5668</a>
+							<p class="mt2 addressTitle">E-mail</p>
+							<a href="">depiccoevents@gmail.com</a>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="socialMediaFooter">
+			<div class="container">
+				<a href=""><i class="flaticon-facebook-1"></i><span>Facebook</span></a>
+				<a href=""><i class="flaticon-twitter-1"></i><span>Twitter</span></a>
+				<a href=""><i class="flaticon-instagram-big-logo"></i><span>Instagram</span></a>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row mxn2">
+					<div class="lg-col-3 md-col-4 sm-col-6 col-12 p2">
+						<div class="smallTitle">
+							<img src="./src/image/logoBlack.png" />
+						</div>
+						<div class="smallContent">
+							<p>
+								De Picco Events is the company that provide event planning services, event coordination,
+								design conceptualization and decoration to the stage, roadshow or annual dinner.
+							</p>
+						</div>
+					</div>
+					<div class="lg-col-3 md-col-4 sm-col-6 col-12 p2">
+						<div class="smallTitle">
+							<div class="title h3">LINKS</div>
+						</div>
+						<div class="smallContent">
+							<div class="row">
+								<div class="col-6">
+									<a href="">Home</a>
+									<a href="">Events</a>
+									<a href="">Services</a>
+									<a href="">Products</a>
+								</div>
+								<div class="col-6">
+									<a href="">Blogs</a>
+									<a href="">Faq</a>
+									<a href="">About</a>
+									<a href="">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lg-col-3 md-col-4 sm-col-6 col-12 p2">
+						<div class="smallTitle">
+							<div class="title h3">CONTACT</div>
+						</div>
+						<div class="smallContent">
+							<div class="contactDetails">
+								<p>
+									<span>Phone:</span>
+									<a href="">012-628 5668</a>
+								</p>
+								<p>
+									<span>Email:</span>
+									<a href="">depiccoevents@gmail.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p class="copyrightContent">
+						2019 © <span>DepiccoEvents.com.my</span> | <a href="">Privacy</a> <br />Powered By
+						<a href="">Stooges</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			let url = window.location.href;
+			let secUrl = url.split('/');
+			let last = secUrl.pop() || secUrl.pop;
+			const chg = document.getElementById('headerChg');
+			if (last != 'index.html') {
+				chg.classList.add('otherPage');
+				chg.classList.remove('scroll');
+				document.getElementById('header').style.height = 0;
+			} else {
+				document.getElementById('header').style.height = '120px';
+			}
+			window.addEventListener('scroll', function() {
+				let height = window.scrollY;
+				if (height > 100) {
+					chg.classList.remove('otherPage');
+					chg.classList.add('scroll');
+				} else {
+					chg.classList.add('otherPage');
+					chg.classList.remove('scroll');
+				}
+			});
+		</script>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

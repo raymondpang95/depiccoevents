@@ -1,0 +1,59 @@
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+[class^='iconSprite-'] {
+  background-image: url(/src/image/iconSprite.png);
+  background-size: 100px 600px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+[class*='image-scale-'] {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+[class*='image-scale-']:before {
+  content: '';
+  display: block;
+}
+
+[class*='image-scale-'].image-scale-32by17:before {
+  padding-top: calc(17 / 32 * 100%);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=project-mixin.css.map */
