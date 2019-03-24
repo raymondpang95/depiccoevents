@@ -43,7 +43,7 @@
   margin-bottom: 0;
 }
 
-.homeProduct .card .cardBody .button, .products .card .cardBody .button, .homeBlog .card .cardBody .button, .eventContent .card .cardBody .button, .blogs .cardBlog .button, .contact .container .left .form .button {
+.homeProduct .card .cardBody .button, .products .card .cardBody .button, .homeBlog .card .cardBody .button, .eventContent .card .cardBody .button, .blogs .cardBlog .button, .contact .container .leftArea .form .button {
   background-color: #37c1f0;
   color: #ffffff;
   border: 2px solid #37c1f0;
@@ -60,7 +60,7 @@
   font-family: Oswald, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
-.homeProduct .card .cardBody .button:hover, .products .card .cardBody .button:hover, .homeBlog .card .cardBody .button:hover, .eventContent .card .cardBody .button:hover, .blogs .cardBlog .button:hover, .contact .container .left .form .button:hover {
+.homeProduct .card .cardBody .button:hover, .products .card .cardBody .button:hover, .homeBlog .card .cardBody .button:hover, .eventContent .card .cardBody .button:hover, .blogs .cardBlog .button:hover, .contact .container .leftArea .form .button:hover {
   background-color: #ffffff;
   color: #37c1f0;
 }
@@ -320,7 +320,7 @@
   top: 12px;
 }
 
-.contact .container .left .form input, .contact .container .left .form textarea {
+.contact .container .leftArea .form input, .contact .container .leftArea .form textarea {
   outline: none;
   resize: none;
   border: 1px solid #ced4da;
@@ -333,15 +333,34 @@
   width: 100%;
 }
 
-.contact .container .left .form input:focus, .contact .container .left .form textarea:focus {
+.contact .container .leftArea .form input:focus, .contact .container .leftArea .form textarea:focus {
   border: 1px solid #37c1f0;
 }
 
-.contact .container .left .title, .contact .container .right .title {
+.contact .container .leftArea .title, .contact .container .rightArea .title {
   font-size: 67px;
   line-height: 77.0055px;
   font-weight: 700;
   color: #3c3838;
+}
+
+.socialMediaFooter a i {
+  color: #ffffff;
+  border: 1px solid #6c757d;
+  width: 59px;
+  height: 59px;
+  line-height: 59px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+}
+
+.homeEvent, .homeBlog, .homeTestimonials, .homeProduct, .eventContent, .services, .products, .blogs, .faq, .about, .aboutTestimonials, .aboutUs, .contact {
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 * {
@@ -1260,19 +1279,19 @@ p {
 
 @media (min-width: 1px) and (max-width: 420px) {
   .container {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .xs-hide {
     display: none;
   }
   .mxn2 {
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
   .mxn2 > .p2 {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1421,7 +1440,7 @@ router-outlet {
   margin-bottom: 0;
 }
 
-.homeProduct .card .cardBody .button, .products .card .cardBody .button, .homeBlog .card .cardBody .button, .eventContent .card .cardBody .button, .blogs .cardBlog .button, .contact .container .left .form .button {
+.homeProduct .card .cardBody .button, .products .card .cardBody .button, .homeBlog .card .cardBody .button, .eventContent .card .cardBody .button, .blogs .cardBlog .button, .contact .container .leftArea .form .button {
   background-color: #37c1f0;
   color: #ffffff;
   border: 2px solid #37c1f0;
@@ -1438,7 +1457,7 @@ router-outlet {
   font-family: Oswald, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
-.homeProduct .card .cardBody .button:hover, .products .card .cardBody .button:hover, .homeBlog .card .cardBody .button:hover, .eventContent .card .cardBody .button:hover, .blogs .cardBlog .button:hover, .contact .container .left .form .button:hover {
+.homeProduct .card .cardBody .button:hover, .products .card .cardBody .button:hover, .homeBlog .card .cardBody .button:hover, .eventContent .card .cardBody .button:hover, .blogs .cardBlog .button:hover, .contact .container .leftArea .form .button:hover {
   background-color: #ffffff;
   color: #37c1f0;
 }
@@ -1698,7 +1717,7 @@ router-outlet {
   top: 12px;
 }
 
-.contact .container .left .form input, .contact .container .left .form textarea {
+.contact .container .leftArea .form input, .contact .container .leftArea .form textarea {
   outline: none;
   resize: none;
   border: 1px solid #ced4da;
@@ -1711,15 +1730,34 @@ router-outlet {
   width: 100%;
 }
 
-.contact .container .left .form input:focus, .contact .container .left .form textarea:focus {
+.contact .container .leftArea .form input:focus, .contact .container .leftArea .form textarea:focus {
   border: 1px solid #37c1f0;
 }
 
-.contact .container .left .title, .contact .container .right .title {
+.contact .container .leftArea .title, .contact .container .rightArea .title {
   font-size: 67px;
   line-height: 77.0055px;
   font-weight: 700;
   color: #3c3838;
+}
+
+.socialMediaFooter a i {
+  color: #ffffff;
+  border: 1px solid #6c757d;
+  width: 59px;
+  height: 59px;
+  line-height: 59px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+}
+
+.homeEvent, .homeBlog, .homeTestimonials, .homeProduct, .eventContent, .services, .products, .blogs, .faq, .about, .aboutTestimonials, .aboutUs, .contact {
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 ::-moz-selection {
@@ -1791,7 +1829,7 @@ router-outlet {
   font-style: normal;
 }
 
-f .ff2 {
+.ff2 {
   font-family: Oswald, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
@@ -1872,11 +1910,11 @@ f .ff2 {
 .header .headerChg .flex .nav nav {
   min-width: 32px;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .header .headerChg .flex .nav nav a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: #888585;
   padding: 10px 8px;
@@ -1973,20 +2011,6 @@ f .ff2 {
   margin: 0 10px;
 }
 
-.socialMediaFooter a i {
-  color: #ffffff;
-  border: 1px solid #6c757d;
-  width: 59px;
-  height: 59px;
-  line-height: 59px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  font-size: 14px;
-}
-
 .socialMediaFooter a span {
   display: inline;
 }
@@ -2071,11 +2095,6 @@ f .ff2 {
   color: #37c1f0;
 }
 
-.homeEvent {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
 .homeEvent .homeEventContent .title {
   text-transform: uppercase;
   color: #3c3838;
@@ -2127,8 +2146,6 @@ f .ff2 {
 }
 
 .homeBlog {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background-color: #f3f3f3;
 }
 
@@ -2170,11 +2187,6 @@ f .ff2 {
   margin-top: 10px;
 }
 
-.homeTestimonials {
-  padding-top: 60px;
-  padding-bottom: 100px;
-}
-
 .homeTestimonials .wrap {
   margin-top: 60px;
   margin-bottom: 30px;
@@ -2198,6 +2210,12 @@ f .ff2 {
   position: relative;
   font-size: 14px;
   line-height: 26px;
+}
+
+@media (max-width: 420px) {
+  .homeTestimonials .wrap .desc {
+    padding: 0 8px;
+  }
 }
 
 .homeTestimonials .wrap .userInfo {
@@ -2237,8 +2255,6 @@ f .ff2 {
 }
 
 .homeProduct {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
@@ -2282,6 +2298,12 @@ f .ff2 {
   font-size: 14px;
   padding: 19px 40px;
   margin: 10px 0;
+}
+
+@media (max-width: 420px) {
+  .homeSubscribed .container form input {
+    width: 100%;
+  }
 }
 
 .homeSubscribed .container form input::-webkit-input-placeholder {
@@ -2373,8 +2395,6 @@ f .ff2 {
 }
 
 .eventContent {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
@@ -2417,8 +2437,6 @@ f .ff2 {
 }
 
 .services {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
@@ -2439,14 +2457,10 @@ f .ff2 {
 }
 
 .products {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
 .blogs {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
@@ -2487,8 +2501,6 @@ f .ff2 {
 }
 
 .faq {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
 }
 
@@ -2503,11 +2515,6 @@ f .ff2 {
 
 .faq .content .desc {
   word-wrap: break-word;
-}
-
-.about {
-  padding-top: 60px;
-  padding-bottom: 100px;
 }
 
 .about .content .title {
@@ -2540,8 +2547,6 @@ f .ff2 {
 }
 
 .aboutTestimonials {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background-color: #f3f3f3;
   position: relative;
 }
@@ -2579,8 +2584,6 @@ f .ff2 {
 }
 
 .aboutUs {
-  padding-top: 60px;
-  padding-bottom: 100px;
   position: relative;
 }
 
@@ -2620,8 +2623,6 @@ f .ff2 {
 }
 
 .contact {
-  padding-top: 60px;
-  padding-bottom: 100px;
   background: #f3f3f3;
   text-transform: uppercase;
 }
@@ -2631,60 +2632,69 @@ f .ff2 {
 }
 
 @media (min-width: 421px) {
-  .contact .container .left {
+  .contact .container .leftArea {
     padding-right: 100px;
   }
 }
 
-.contact .container .left .form input::-webkit-input-placeholder {
+.contact .container .leftArea .form input {
+  width: 100%;
+}
+
+.contact .container .leftArea .form input::-webkit-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form input:-ms-input-placeholder {
+.contact .container .leftArea .form input:-ms-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form input::-ms-input-placeholder {
+.contact .container .leftArea .form input::-ms-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form input::placeholder {
+.contact .container .leftArea .form input::placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form textarea::-webkit-input-placeholder {
+.contact .container .leftArea .form textarea {
+  width: 100%;
+}
+
+.contact .container .leftArea .form textarea::-webkit-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form textarea:-ms-input-placeholder {
+.contact .container .leftArea .form textarea:-ms-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form textarea::-ms-input-placeholder {
+.contact .container .leftArea .form textarea::-ms-input-placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form textarea::placeholder {
+.contact .container .leftArea .form textarea::placeholder {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: #888585;
 }
 
-.contact .container .left .form .button {
+.contact .container .leftArea .form .button {
+  width: 100%;
   text-transform: uppercase;
 }
 
-.contact .container .right address {
+.contact .container .rightArea address {
   font-style: normal;
 }
 
-.contact .container .right address a {
+.contact .container .rightArea address a {
   color: #237f9e;
 }
 /*# sourceMappingURL=style.css.map */

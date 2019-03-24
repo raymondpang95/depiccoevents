@@ -308,3 +308,20 @@
 	font-weight: 700;
 	color: $font-color-1;
 }
+
+%socialMediaIconBorder {
+	color: $font-color-3;
+	border: 1px solid $color-secondary-3;
+	width: 59px;
+	height: 59px;
+	line-height: 59px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.3s ease 0s;
+	font-size: $h6;
+}
+%cardLayoutSize{
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
